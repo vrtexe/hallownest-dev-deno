@@ -1,0 +1,33 @@
+{
+  "tasks": {
+    "dev": "deno  run --allow-net --allow-read --watch main.js "
+  },
+  "exports": {
+    "./*": "./dist/*"
+  },
+  "imports": {
+    "leaflet": "./dist/libs/leaflet/2.0.0-a1/leaflet.js",
+    "@std/http": "jsr:@std/http@^1.0.23",
+    "geojson": "npm:geojson@^0.5.0",
+    "@types/geojson": "npm:@types/geojson@^7946.0.16"
+  },
+  "compilerOptions": {
+    "module": "esnext",
+    "allowJs": true,
+    "checkJs": true,
+    "verbatimModuleSyntax": true,
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+    "paths": {
+      "leaflet": ["./dist/libs/leaflet/2.0.0-a1/leaflet.d.ts"]
+    },
+    "lib": ["es2022", "dom", "dom.iterable", "deno.shared_globals", "deno.ns"]
+  },
+  "fmt": {
+    "lineWidth": 120,
+    "singleQuote": false,
+    "indentWidth": 2
+  },
+  "exclude": ["dist/libs/"]
+}
