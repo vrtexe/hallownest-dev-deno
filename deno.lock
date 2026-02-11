@@ -1,5 +1,5 @@
 {
-  "version": "4",
+  "version": "5",
   "specifiers": {
     "jsr:@std/cli@^1.0.27": "1.0.27",
     "jsr:@std/encoding@^1.0.10": "1.0.10",
@@ -77,14 +77,6 @@
       "jsr:@std/http@^1.0.23",
       "npm:@types/geojson@^7946.0.16",
       "npm:geojson@0.5"
-    ],
-    "packageJson": {
-      "dependencies": [
-        "npm:@types/geojson@^7946.0.16",
-        "npm:@types/node@^25.2.0",
-        "npm:prettier@^3.8.1",
-        "npm:typescript@^5.9.3"
-      ]
-    }
+    ]
   }
 }

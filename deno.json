@@ -6,7 +6,7 @@
     "./*": "./dist/*"
   },
   "imports": {
-    "leaflet": "./dist/libs/leaflet/2.0.0-a1/leaflet.js",
+    "leaflet": "./dist/libs/leaflet/2.0.0-a1/leaflet.d.ts",
     "@std/http": "jsr:@std/http@^1.0.23",
     "geojson": "npm:geojson@^0.5.0",
     "@types/geojson": "npm:@types/geojson@^7946.0.16"
